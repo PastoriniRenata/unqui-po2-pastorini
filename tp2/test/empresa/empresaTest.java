@@ -1,10 +1,10 @@
-package tp2;
+package empresa;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class testTp2 {
+class empresaTest {
 
 	@Test
 	void test() {
