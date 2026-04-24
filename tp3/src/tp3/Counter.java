@@ -43,6 +43,8 @@ public class Counter {
     public int cantDigitosPares(int x) {  
           
         int cantDigPares = 0;  
+        
+        
           
         while(x>0) {  
            cantDigPares += (x%2 == 0) ? 1: 0;   
