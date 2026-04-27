@@ -1,8 +1,8 @@
 package tp3;
 
 import java.util.ArrayList;  
-import java.util.Collections;  
-import java.util.List;  
+//import java.util.Collections;  
+//import java.util.List;  
   
 public class Counter {  
     private ArrayList<Integer> arr = new ArrayList<Integer>();  

@@ -1,15 +1,18 @@
-package tp3;  
+package testTp3;  
   
 import static org.junit.jupiter.api.Assertions.*;  
 import org.junit.jupiter.api.BeforeEach;  
-import org.junit.jupiter.api.Test;  
+import org.junit.jupiter.api.Test;
+
+import tp3.Counter;  
 
   
 public class CounterTestCase {  
     private Counter counter;  
-        /**  
-        * Crea un escenario de test básico, que consiste en un contador        * con 10 enteros        *        * @throws Exception  
-        */    
+    /**  
+    * Crea un escenario de test básico, que consiste en un contador        * con 10 enteros        *        * @throws Exception  
+    */    
+    
     @BeforeEach  
     public void setUp() throws Exception {  
         //Se crea el contador  
@@ -27,7 +30,10 @@ public class CounterTestCase {
 		//counter.addNumber(4);    
         }  
     /**  
-    * Verifica la cantidad de pares    */    @Test  
+    * Verifica la cantidad de pares    
+    **/    
+    
+    @Test  
     public void testEvenNumbers() {  
         // Getting the even occurrences  
         int amount = counter.getEvenOcurrences();  
