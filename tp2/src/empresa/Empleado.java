@@ -2,6 +2,7 @@ package empresa;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
@@ -11,13 +12,13 @@ public abstract class Empleado {
 	public String nombre;
 	public String direccion;
 	public String estadoCivil;
-	public LocalDate fechaDeNacimiento;
+	protected LocalDate fechaDeNacimiento;
 	public Double sueldoBasico;
 	
 	public Double porcentajeAporteOS ; // se sobreescriben en las clases hijas, esta bien ponerlos aca??
 	public Double porcentajeAporteJub ; // se sobreescriben en las clases hijas, esta bien ponerlos aca??
 
-	public Set<ReciboDeSueldo> recibosDeSueldo = new HashSet<>();
+	public ArrayList<ReciboDeSueldo> recibosDeSueldo = new ArrayList<ReciboDeSueldo>();
 
 	public Empleado(String nombre, String direccion, String estadoCivil, LocalDate fechaNac, Double sueldoBasico){
 		

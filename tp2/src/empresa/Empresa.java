@@ -1,5 +1,6 @@
 package empresa;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.function.Function;
@@ -8,7 +9,7 @@ public class Empresa {
 	
 	public String nombre;
 	public String cuit;
-	public Set<Empleado> empleados = new HashSet<>();;
+	public ArrayList<Empleado> empleados = new ArrayList<Empleado>();;
 	
 	Empresa(String nombre, String cuit){
 		this.nombre = nombre;
@@ -32,12 +33,12 @@ public class Empresa {
 		return totales(Empleado::retenciones);
 	}
 	
-	public Double totales(Function<Empleado, Double> funcion) {
+	private Double totales(Function<Empleado, Double> funcion) {
 	    return empleados.stream()        
 	            .map(funcion)            
 	            .mapToDouble(d -> d)     
 	            .sum();                  
-	}
+	}//este metodo debería agregarlo al UML??
 	
 	public void liquidacionDeSueldos() {
 		for(Empleado e : empleados) {
