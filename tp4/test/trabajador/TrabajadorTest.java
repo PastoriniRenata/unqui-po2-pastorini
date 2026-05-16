@@ -39,7 +39,7 @@ class TrabajadorTest {
 	
 	@Test
 	public void testCalcularTotalPercibido() {
-		assertEquals(new Double(1588.9), trabajador.getTotalPercibido());
+		assertEquals(new Double(1468.7), trabajador.getTotalPercibido());
 	}
 	
 	

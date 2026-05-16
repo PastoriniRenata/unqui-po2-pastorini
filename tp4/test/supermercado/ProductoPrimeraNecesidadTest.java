@@ -13,7 +13,7 @@ public class ProductoPrimeraNecesidadTest {
 	
 	@BeforeEach
 	public void setUp() {
-		leche = new ProductoPrimeraNecesidad("Leche", 8d, false, 11);
+		leche = new ProductoPrimeraNecesidad("Leche", 8.0, false, 11.0);
 	}
 	
 	@Test

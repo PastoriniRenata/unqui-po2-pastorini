@@ -11,7 +11,12 @@ public class Ingreso {
 		this.monto = monto;
 	}
 	
-	public double getMontoPercibido() {
+	public double getMontoPercibido() { 
+		return monto;
+	}
+	
+	
+	public double getMontoImponible() {
 		return monto;
 	}
 	

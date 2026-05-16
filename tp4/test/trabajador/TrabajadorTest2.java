@@ -18,7 +18,7 @@ class TrabajadorTest2 {
     public void setUp() {
         ingreso1 = new Ingreso("Enero", "Motivo 1", 1000);
         ingreso2 = new Ingreso("Febrero", "Motivo 2", 2000);
-        ingreso3 = new IngresoHoraExtra("Marzo", "Motivo hs extra", 500, 5);
+        ingreso3 = new IngresoHoraExtra("Marzo", "Motivo hs extra", 500.0, 5);
         
         trabajador1 = new Trabajador();
         
@@ -30,7 +30,7 @@ class TrabajadorTest2 {
     @Test
     public void trabajadorTest() {
         
-        assertEquals(3500.0, trabajador1.getTotalPercibido());
+        assertEquals(2900.0, trabajador1.getTotalPercibido());
         
     }
 

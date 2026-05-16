@@ -2,16 +2,16 @@ package supermercado;
 
 public class Producto {
 	protected String nombre;
-	protected double precio;
+	protected Double precio;
 	protected boolean esPrecioCuidado = false;
 
-	Producto(String nombre, double precio, boolean esPrecioCuidado){
+	Producto(String nombre, Double precio, boolean esPrecioCuidado){
 		this.nombre = nombre;
 		this.precio = precio;
 		this.esPrecioCuidado = esPrecioCuidado;
 	}
 	
-	Producto(String nombre, double precio){
+	Producto(String nombre, Double precio){
 		this.nombre = nombre;
 		this.precio = precio;
 	}
@@ -20,7 +20,7 @@ public class Producto {
 		return nombre;
 	}
 	
-	public double getPrecio() {
+	public Double getPrecio() {
 		return precio;
 	}
 	
@@ -28,7 +28,7 @@ public class Producto {
 		return esPrecioCuidado;
 	}
 	
-	public void aumentarPrecio(double aumento) {
+	public void aumentarPrecio(Double aumento) {
 		precio += aumento;
 	}
 	
