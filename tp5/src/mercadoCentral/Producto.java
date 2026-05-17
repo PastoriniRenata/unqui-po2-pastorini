@@ -1,17 +1,26 @@
 package mercadoCentral;
 
-public class Producto {
+public class Producto implements Registrable{
 	protected double precio;
-	protected int stock = 0;
+	protected int stock = 1;
 	
-	Producto (double precio, int stock){
+	public Producto (double precio, int stock){
 		this.precio = precio;
 		this.stock = stock;
 	}
 	
-	Producto (double precio){
+	public Producto (double precio){
 		this.precio = precio;
 	}
+	
+	public void registrar() {
+		this.decrementarStock();
+	}
+	
+	public double montoAPagar() {
+		return this.getPrecio();
+	}
+	
 	
 	public double getPrecio() {
 		return precio;
@@ -26,6 +35,10 @@ public class Producto {
 	
 	public void incrementarStock() {
 		stock++;
+	}
+	
+	public int getStock() {
+		return this.stock;
 	}
 	
 	
